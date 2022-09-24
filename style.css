@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.body{
+    background:#110c1d
+}
+
+
+.navbar{
+    display: flex;
+    position: sticky;
+    z-index: 999;
+    margin-top: 0;
+    width: 100%;
+    flex-basis: 100%;
+    background-color: black;
+    justify-content: flex-end;
+    background:#0d0916 ;    
+}
+
+.navbar a{
+    color:#fff;
+    background-color: #0d0916;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.navbar a:hover{
+    color: #f77062;
+    transition: all 0.5s ease
+}
+
+
+
+
+
+
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #0d0916;
+    z-index: 1;
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 0%;
+}
+.main_content h1{
+    font-size: 4.2rem;
+    background-image: linear-gradient(to top, #7c7c7c 0%, #c4c4c4 100%);
+    background-size: 100%;
+    max-width: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main_content h2{
+    font-size: 2rem;
+    background-image: linear-gradient(to top, #e4e4e4 0%, #bdbdbd 100%);
+    background-size: 100%;
+    margin-top: 0.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main_content p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #7c7c7c;
+}
+.main_btn{
+    font-size: 1rem;
+    background: linear-gradient(45deg,#20bdff,#a5fecb); 
+    padding: 14px 32px;
+    border:none;
+    border-radius: 22px;
+    color: rgb(68, 68, 68);
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+}
+.main_btn a{
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.main_btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff6196;
+    transition: all 0.35s;
+    border-radius: 22px;
+}
+.main_btn:hover{
+    color: #fff;
+}
+.main_btn:hover:after{
+    width: 100%;
+}
+.main_img_container{
+    text-align:center;
+    
+}
+#main_img{
+    height: 70%;
+    width: 70%;
+    opacity: 60%;
+}
+
+#main_img:hover{
+    opacity: 100%;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+.services{
+    background:#0d0916 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services h1{
+    background: linear-gradient(45deg,#ef629f,#eecda3);
+    font-size: 2.5rem;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.services_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    width: 100%;
+}
+.services_card{
+    margin: 3rem;
+    height: 400px;
+    width: 90%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #000000 0%, #00000063 100%, url('/images/'));
+    background-size: cover;
+    position: relative;
+    color: #fff;  
+    order: 1;  
+    font-size: 1rem;
+}
+.developer_card, .artist_card, .designer_card {    
+    background: rgba(72, 53, 90, 0.39);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+}
+.developer_card:hover {
+    box-shadow: 0 10px 40px #a770efcc;
+    transition: all 0.5s ease-in-out;
+}
+.designer_card:hover {
+    box-shadow: 0 10px 40px #20deffcc;
+    transition: all 0.5s ease-in-out;
+}
+.artist_card:hover {
+    box-shadow: 0 10px 40px #ef629f;
+    transition: all 0.5s ease-in-out;
+}
+.developer_title{
+        font-size: 2rem;
+        background: linear-gradient(45deg,#a770ef,#cf8bf3);       
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: fit-content;
+}
+.designer_title{
+        font-size: 2rem; 
+        background: linear-gradient( 45deg, #20bdff,#a5fecb);       
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: fit-content;
+}
+.artist_title{
+      font-size: 2rem;
+      background: linear-gradient(45deg,#ef629f,#eecda3);     
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      height: fit-content;
+      
+}
+.img2_container{
+    margin-top: 2rem;
+    margin-bottom: auto;
+    padding: 0;
+    text-align: center;
+}   
+.img2_container:hover{
+    transform: perspective(800px) rotateY(-8deg) translateY(-20px) rotateX(10deg)
+    scale(1);
+    transition: all 0.7s ease;
+}
+#img2{
+    height: 60%;
+    width: 60%;
+}
+
+
+
+
+@media screen and (max-width: 850px){ 
+    .navbar{
+        flex-direction: column;
+    }
+    .main_container{
+        flex-direction: column;
+    }
+    .main .main_container .main_img_container{
+        width: 150%;
+        height: 150%;
+    }
+    .services_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .aboutme_card_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width:240%;
+    }
+    .contact .letswork h3{
+        font-size: 3rem;
+        justify-content: center;
+    }
+    .aboutme h2{
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+.products{
+    background:#0d0916 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5rem;
+}
+.products h1{
+    background: linear-gradient(45deg,#20bdff,#a5fecb); 
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.products h1:hover{
+    font-size: 3.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.products_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_card{
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px #000000;
+    border: 2px solid rgb(119, 119, 119);
+    opacity: 50%;
+} 
+.imgcard-1{
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    background-image: url('/images/card1.png') ;
+    background-size: 101%;
+}
+.imgcard-2{
+   background: linear-gradient(to right, #78ffd6, #a8ff78); 
+   background-image: url('/images/card2.png');
+   background-size: 101%;
+}
+.imgcard-3{
+    background: linear-gradient(to right, #78ffd6, #a8ff78); 
+    background-image: url('/images/card3.png');
+    background-size: 101%;
+ }
+.imgcard-4{
+    background: linear-gradient(to right, #89fffd, #ef32d9);
+    background-image: url('/images/card4.png');
+    background-size: 101%;   
+}
+.imgcard-1:hover {
+    opacity: 100%;
+    transition: 0.3s ease-in;
+    transform: scale(1.075);
+    background-image: url('/images/card1-hover.png');
+}
+.imgcard-2:hover {
+    opacity: 100%;
+    transition: 0.3s ease-in;
+    transform: scale(1.075);
+    background-image: url('/images/card2-hover.png');
+}
+.imgcard-3:hover {
+    opacity: 100%;
+    transition: 0.3s ease-in;
+    transform: scale(1.075);
+    background-image: url('/images/card3-hover.png');
+}
+.imgcard-4:hover {
+    opacity: 100%;
+    transition: 0.3s ease-in;
+    transform: scale(1.075);
+    background-image: url('/images/card4-hover.png');
+}
+.img_card h2{
+    text-align: center;
+}
+  
+  
+
+
+
+.aboutme{
+    background:#0d0916 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.aboutme h1{
+    background: linear-gradient(45deg,#ef629f,#eecda3);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.aboutme h2{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.877);
+}
+.aboutme_card { 
+    margin:0.5rem;
+    height: 120px;
+    width: 40%;
+    color: #fff; 
+    font-size: 1rem; 
+    background: rgba(72, 53, 90, 0.39);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.7rem 1.5rem ;
+}
+.aboutme_title{
+    font-size: 2rem;
+    background: linear-gradient(45deg,#a770ef,#cf8bf3); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: fit-content;
+}
+
+.aboutme_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.aboutme_card_container .box{
+    flex-basis: 50%;
+}
+
+
+.aboutme_card:hover {
+    box-shadow: 0 10px 40px #a2bbff73;
+    transition: all 0.5s ease-in-out;
+}
+.aboutme_title_education{
+        font-size: 2rem;
+        background-color: #f3ec78;
+        background: linear-gradient(45deg,#a770ef,#cf8bf3); 
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.aboutme_title_illustration{
+    font-size: 2rem;
+    background-color: #f3ec78; 
+    background: linear-gradient(45deg,#a8ff78,#78ffd6);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aboutme_title_networking{
+        font-size: 2rem;
+        background: linear-gradient(45deg,#20bdff,#a5fecb);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.aboutme_title_music{
+      font-size: 2rem; 
+      background: linear-gradient( 45deg,#ef629f,#eecda3);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+.contact{
+    background:#0d0916 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.letswork h3{
+    background: linear-gradient(45deg,#20bdff,#a5fecb); 
+    font-size: 5.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 13rem;
+    
+  }
+.contact_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 25rem;
+}
+.contact_btn button {
+    color: rgba(255, 255, 255, 0.63);
+    padding: 24px 34px;
+    border: none;
+    border-radius: 28px;
+    background: #3130308a;
+    box-shadow:  2px 2px 2px #0000001a;    
+}
+.contact_btn a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact_btn button:hover{
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.315);
+    color: #fff;
+    transform: translateY(-7px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+
+
+
+
+
+.footer{
+    background:#0d0916 ;
+    display: flex;
+    height: 100%;
+    padding: 2rem;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+.footer h1{
+    color: #68607a;
+    font-size: 1.5rem;
+    display: flex;
+}
+.footer a{
+    color: #68607a;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 4rem;
+}
+.footer_link:hover{
+    background: linear-gradient(45deg,#20bdff,#a5fecb);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
